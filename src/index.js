@@ -62,6 +62,9 @@ import TabContent from './TabContent';
 import TabPane from './TabPane';
 import Jumbotron from './Jumbotron';
 import Alert from './Alert';
+import Carousel from './Carousel';
+import CarouselItem from './CarouselItem';
+import CarouselControl from './CarouselControl';
 
 export {
   Alert,
@@ -127,5 +130,8 @@ export {
   PaginationLink,
   TabContent,
   TabPane,
-  Jumbotron
+  Jumbotron,
+  Carousel,
+  CarouselItem,
+  CarouselControl
 };

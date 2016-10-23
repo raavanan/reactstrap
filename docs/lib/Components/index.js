@@ -58,6 +58,10 @@ class Components extends React.Component {
           to: '/components/card/'
         },
         {
+          name: 'Carousel',
+          to: '/components/carousel/'
+        },
+        {
           name: 'Navs',
           to: '/components/navs/'
         },
