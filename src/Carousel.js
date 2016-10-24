@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
-//import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const propTypes = {
   interval: PropTypes.number,
@@ -22,7 +22,12 @@ const Carousel = (props) => {
   const classes = classNames('carousel', props.className);
   return (
     <div id="carousel-example-generic" className={classes} data-ride="carousel">
-        {props.children}
+      <ol className="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" className="active" />
+        <li data-target="#carousel-example-generic" data-slide-to="1" />
+        <li data-target="#carousel-example-generic" data-slide-to="2" />
+      </ol>
+      {props.children}
     </div>
     );
 };
